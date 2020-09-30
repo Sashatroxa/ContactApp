@@ -1,0 +1,6 @@
+framework module Pods_TestingForJob {
+  umbrella header "Pods-TestingForJob-umbrella.h"
+
+  export *
+  module * { export * }
+}
