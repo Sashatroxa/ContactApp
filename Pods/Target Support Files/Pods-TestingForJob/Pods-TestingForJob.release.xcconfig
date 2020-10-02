@@ -1,9 +1,9 @@
 ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES
-FRAMEWORK_SEARCH_PATHS = $(inherited) "${PODS_CONFIGURATION_BUILD_DIR}/CCBottomRefreshControl" "${PODS_CONFIGURATION_BUILD_DIR}/ESPullToRefresh" "${PODS_CONFIGURATION_BUILD_DIR}/PinLayout"
+FRAMEWORK_SEARCH_PATHS = $(inherited) "${PODS_CONFIGURATION_BUILD_DIR}/ESPullToRefresh"
 GCC_PREPROCESSOR_DEFINITIONS = $(inherited) COCOAPODS=1
-HEADER_SEARCH_PATHS = $(inherited) "${PODS_CONFIGURATION_BUILD_DIR}/CCBottomRefreshControl/CCBottomRefreshControl.framework/Headers" "${PODS_CONFIGURATION_BUILD_DIR}/ESPullToRefresh/ESPullToRefresh.framework/Headers" "${PODS_CONFIGURATION_BUILD_DIR}/PinLayout/PinLayout.framework/Headers"
+HEADER_SEARCH_PATHS = $(inherited) "${PODS_CONFIGURATION_BUILD_DIR}/ESPullToRefresh/ESPullToRefresh.framework/Headers"
 LD_RUNPATH_SEARCH_PATHS = $(inherited) '@executable_path/Frameworks' '@loader_path/Frameworks'
-OTHER_LDFLAGS = $(inherited) -framework "CCBottomRefreshControl" -framework "CoreGraphics" -framework "ESPullToRefresh" -framework "Foundation" -framework "PinLayout" -framework "UIKit"
+OTHER_LDFLAGS = $(inherited) -framework "ESPullToRefresh"
 OTHER_SWIFT_FLAGS = $(inherited) -D COCOAPODS
 PODS_BUILD_DIR = ${BUILD_DIR}
 PODS_CONFIGURATION_BUILD_DIR = ${PODS_BUILD_DIR}/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)

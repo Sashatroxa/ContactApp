@@ -6,10 +6,9 @@
 //  Copyright © 2020 Александр. All rights reserved.
 //
 
-import Foundation
 import UIKit
 
-struct AllData : Codable {
+struct ProfileModel : Codable {
     
     var data: [Profile]?
     var total:Int

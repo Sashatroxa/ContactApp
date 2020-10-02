@@ -7,7 +7,6 @@
 //
 
 import UIKit
-import PinLayout
 
 class GeneralView: UIView {
     
@@ -31,7 +30,12 @@ class GeneralView: UIView {
     
     override func layoutSubviews() {
         super.layoutSubviews()
-        let currentWidth = UIScreen.main.bounds.size.width
-        tableView.pin.top(safeAreaInsets.top).horizontally().bottom(safeAreaInsets.bottom)
+        
+        NSLayoutConstraint.activate([
+            tableView.topAnchor.constraint(equalTo: self.topAnchor, constant: 0),
+            tableView.bottomAnchor.constraint(equalTo: self.bottomAnchor, constant: 0),
+            tableView.leadingAnchor.constraint(equalTo: self.leadingAnchor, constant: 0),
+            tableView.trailingAnchor.constraint(equalTo: self.trailingAnchor, constant: 0)  
+        ])
     }
 }

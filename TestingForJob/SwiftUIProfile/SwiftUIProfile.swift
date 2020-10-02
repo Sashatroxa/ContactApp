@@ -17,8 +17,6 @@ struct SwiftUIProfile: View {
     
     var body: some View {
         VStack {
-            // вообщем, когда я делаю это, то нужно передавать не UIImageView, а UIImage
-            //вот это я лох! хахаха прости
             Image(uiImage: picture.image!)
                 .clipShape(Circle())
             
